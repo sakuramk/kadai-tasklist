@@ -20,7 +20,7 @@
 </span>
         </div>
         <div>
-          <p><%= task.content %></p>
+          <p><%= link_to task.content ,task_path(task.id) %></p>
         </div>
         <div>
           <% if current_user == task.user %>
